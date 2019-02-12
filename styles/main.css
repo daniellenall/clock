@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+
+body {
+    font-family: 'Cutive Mono', monospace;
+}
+
+.overlay {
+    background-color: #000;
+    color: green;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 5px;
+    width: 6em;
+    margin: 0 auto;
+}

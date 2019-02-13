@@ -1,15 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400');
 
 body {
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(0deg, #FFFFFF,  #23A6D5);
+}
+
+.wrapper {
+    width: 100vh;
+    height: 100vh;
 }
 
 .overlay {
-    background-color: #000;
-    color: green;
+    color: #FFF;
     font-size: 2em;
     text-align: center;
     border-radius: 5px;
-    width: 6em;
     margin: 0 auto;
+}
+
+.date {
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+#clock {
+    font-size: 3em;
+}
+.date > #day {
+    font-size: 0.75em;
 }

@@ -8,8 +8,12 @@ function getTime() {
     updateDateTime();
     var hours = current.getHours();
     var minutes = current.getMinutes();
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
     document.getElementById("hours").innerHTML = hours;
     document.getElementById("minutes").innerHTML = minutes;
+
 }
 
 function getDate() {

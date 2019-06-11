@@ -1,14 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400');
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background: #1E1E1E;
 }
 
 .wrapper {
-    position: absolute;
-    width: 100vh;
+    position: relative;
+    width: 100%;
     height: 100vh;
+    margin: 0 auto;
+    background-image: linear-gradient(to top left, #00BFFF, #9400D3);
 }
 
 .overlay {
@@ -17,6 +40,12 @@ body {
     text-align: center;
     border-radius: 5px;
     margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
 }
 
 .date {

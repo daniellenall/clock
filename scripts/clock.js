@@ -4,12 +4,23 @@ function updateDateTime() {
      current = new Date();
 }
 
+
 function getTime() {
     updateDateTime();
     var hours = current.getHours();
     var minutes = current.getMinutes();
     if (minutes < 10) {
         minutes = "0" + minutes;
+    }
+    if (hours > 12 && hours || 0 ) {
+        hours = hours - 12;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("am-pm").innerHTML = "PM";
+    }
+    if (hours == 0){
+        hours = 12;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("am-pm").innerHTML = "AM";
     }
     document.getElementById("hours").innerHTML = hours;
     document.getElementById("minutes").innerHTML = minutes;

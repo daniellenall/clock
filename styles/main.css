@@ -73,3 +73,9 @@ body {
 .date > #day {
     font-size: 0.75em;
 }
+
+#am-pm {
+    font-weight: 400;
+    font-size: 0.2em;
+    opacity: 0.5;
+}
